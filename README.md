@@ -71,7 +71,7 @@ https://philpem.me.uk/leeedavison/6502/ehbasic/
 
 テキスト変換例  
 
-Grant's 6-chip 6809 computer の "ROM dump and source code"公開されているGrantSearle BASIC ExBasROM.hexは次のように変換します。
+Grant's 6-chip 6809 computer の "ROM dump and source code"公開されているGrantSearle BASIC ExBasROM.hexは次のように変換します。  
 http://searle.x10host.com/6809/Simple6809.html
 
 ```
