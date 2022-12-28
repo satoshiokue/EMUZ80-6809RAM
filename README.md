@@ -38,7 +38,7 @@ EMUZ80で配布されているフォルダemuz80.X下のmain.cと置き換えて
 #define CLK_6809 8000000UL
 ```
 
-6309を3MHzで動作させるときは163行目のwhile文をコメントアウトしてください。
+6309を3MHzで動作させるときはCLK_6809を12000000ULとして、163行目のwhile文をコメントアウトしてください。
 ```
 while(RA1);	  // Detect E falling edge <2.75MHz (11MHz)
 ```
