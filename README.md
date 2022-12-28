@@ -20,10 +20,10 @@ HD68A09P
 このソースコードは電脳伝説さんのmain.cを元に改変してGPLライセンスに基づいて公開するものです。
 
 ## メザニンボード
-https://github.com/satoshiokue/MEZ6809RAM  
+https://github.com/satoshiokue/MEZ6809RAM
 
 ## 回路図
-https://github.com/satoshiokue/MEZ6809RAM/blob/main/MEZ6809RAM.pdf　　
+https://github.com/satoshiokue/MEZ6809RAM/blob/main/MEZ6809RAM.pdf
 
 ## ファームウェア
 
@@ -63,9 +63,6 @@ PIC18F47Q83 emuz80_6809RAM_Q8x.hex
 PIC18F47Q84 emuz80_6809RAM_Q8x.hexx  
 
 
-Enhanced 6502 BASIC by Lee Davison  
-https://philpem.me.uk/leeedavison/6502/ehbasic/  
-
 ## 6809プログラムの格納
 インテルHEXデータを配列データ化して配列rom[]に格納すると0xC000に転送され6809で実行できます。
 
@@ -80,7 +77,7 @@ xxd -i -c16 ExBasROM.bin > ExBasROM.txt
 ```
 
 使用ツール例[E3V3A / hex2bin]  
-https://github.com/E3V3A/hex2bin  
+https://github.com/E3V3A/hex2bin
 
 ## 謝辞
 思い入れのあるCPUを動かすことのできるシンプルで美しいEMUZ80を開発された電脳伝説さんに感謝いたします。
