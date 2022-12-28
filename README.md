@@ -1,5 +1,4 @@
 # EMUZ80-6809RAM
-6809 Single-Board Computer
 
 ![EMUZ80-6809RAM](https://github.com/satoshiokue/EMUZ80-6809RAM/blob/main/imgs/IMG_1821.jpeg)  
 6809 Single-Board Computer    
