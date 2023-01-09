@@ -22,6 +22,9 @@ HD68A09P
 ## メザニンボード
 https://github.com/satoshiokue/MEZ6809RAM
 
+MEZ6809RAM専用プリント基板 - オレンジピコショップ  
+https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-066.html
+
 ## 回路図
 https://github.com/satoshiokue/MEZ6809RAM/blob/main/MEZ6809RAM.pdf
 
