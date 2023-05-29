@@ -76,19 +76,6 @@ PIC18F47Q84 emuz80_6809RAMxMHz_Q8x.hex
 ## 6809プログラムの格納
 インテルHEXデータを配列データ化して配列rom[]に格納すると0xC000に転送され6809で実行できます。
 
-テキスト変換例  
-
-Grant's 6-chip 6809 computer の "ROM dump and source code"公開されているGrantSearle BASIC ExBasROM.hexは次のように変換します。  
-http://searle.x10host.com/6809/Simple6809.html
-
-```
-hex2bin -p 00 ExBasROM.hex
-xxd -i -c16 ExBasROM.bin > ExBasROM.txt
-```
-
-使用ツール例[E3V3A / hex2bin]  
-https://github.com/E3V3A/hex2bin
-
 ## 謝辞
 思い入れのあるCPUを動かすことのできるシンプルで美しいEMUZ80を開発された電脳伝説さんに感謝いたします。
 
