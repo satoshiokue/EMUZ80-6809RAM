@@ -243,13 +243,13 @@ void main(void) {
 	// UART3 Receiver
 	ANSELA7 = 0;	// Disable analog function
 	TRISA7 = 1;		// RX set as input
-	U3RXPPS = 0x07;	//RA7->UART3:RX3;
+	U3RXPPS = 0x07;	// RA7->UART3:RX3;
 
 	// UART3 Transmitter
 	ANSELA6 = 0;	// Disable analog function
 	LATA6 = 1;		// Default level
 	TRISA6 = 0;		// TX set as output
-	RA6PPS = 0x26;	//RA6->UART3:TX3;
+	RA6PPS = 0x26;	// RA6->UART3:TX3;
 
 	U3ON = 1;		// Serial port enable
 
@@ -374,8 +374,8 @@ void main(void) {
 	IVTLOCKbits.IVTLOCKED = 0x01;
 
 	// CLC VI enable
-	CLC5IF = 0;			// Clear the CLC8 interrupt flag
-	CLC5IE = 1;			// Enabling CLC8 interrupt
+	CLC5IF = 0;			// Clear the CLC5 interrupt flag
+	CLC5IE = 1;			// Enabling CLC5 interrupt
 
 	// 6809 start
 	GIE = 1;			// Global interrupt enable
