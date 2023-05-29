@@ -35,13 +35,13 @@ EMUZ80で配布されているフォルダemuz80.X下のmain.cと置き換えて
 
 ## クロック周波数
 
-84行目のCLK_6809がクロック周波数です。初期値は8MHzになっています。  
+175行目のCLK_6809がクロック周波数です。初期値は8MHzになっています。  
 6809内部で1/4されます。
 ```
 #define CLK_6809 8000000UL
 ```
 
-6309を3MHzで動作させるときはCLK_6809を12000000ULとして、163行目のwhile文をコメントアウトしてください。
+6309を3MHzで動作させるときはCLK_6809を12000000ULとして、247行目のwhile文をコメントアウトしてください。
 ```
 while(RA1);	  // Detect E falling edge <2.75MHz (11MHz)
 ```
@@ -49,12 +49,12 @@ while(RA1);	  // Detect E falling edge <2.75MHz (11MHz)
 ## アドレスマップ
 ```
 Memory
-RAM1  0x0000 - 0x9FFF 40kバイト
-RAM2  0xB000 - 0xFFFF 20kバイト
+RAM1  0x0000 - 0x7FFF 32kバイト
+RAM2  0x9000 - 0xFFFF 20kバイト
 
-I/O   0xA000 - 0xAFFF
-通信レジスタ 0xA001
-制御レジスタ 0xA000
+I/O   0x8000 - 0x8FFF
+通信レジスタ 0x8018
+制御レジスタ 0x8019
 ```
 
 ## PICプログラムの書き込み
@@ -63,10 +63,10 @@ EMUZ80技術資料8ページにしたがってPICに適合するファイルを�
 またはArduino UNOを用いてPICを書き込みます。  
 https://github.com/satoshiokue/Arduino-PIC-Programmer
 
-PIC18F47Q43 emuz80_6809RAM_Q43.hex  
+PIC18F47Q43 emuz80_6809RAMxMHz_Q43.hex  
 
-PIC18F47Q83 emuz80_6809RAM_Q8x.hex  
-PIC18F47Q84 emuz80_6809RAM_Q8x.hexx  
+PIC18F47Q83 emuz80_6809RAMxMHz_Q8x.hex  
+PIC18F47Q84 emuz80_6809RAMxMHz_Q8x.hex  
 
 
 ## 6809プログラムの格納
