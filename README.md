@@ -50,11 +50,15 @@ while(RA1);	  // Detect E falling edge <2.75MHz (11MHz)
 ```
 Memory
 RAM1  0x0000 - 0x7FFF 32kバイト
-RAM2  0x9000 - 0xFFFF 20kバイト
+RAM2  0x9000 - 0xFFFF 28kバイト
 
 I/O   0x8000 - 0x8FFF
 通信レジスタ 0x8018
 制御レジスタ 0x8019
+
+
+BASICワークエリア 0x0000 - 0x7FFF
+モニターワークエリア 0x9000 - 0xBFFF
 ```
 
 ## PICプログラムの書き込み
